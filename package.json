@@ -1,5 +1,6 @@
 {
   "name": "monedero-virtual",
+  "homepage": "https://valeskacampos.github.io/monedero-virtual",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
@@ -9,11 +10,9 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "predeploy": "npx expo export --platform web",
-    "deploy": "gh-pages -d dist"
-
+    "predeploy": "expo export",
+    "deploy": "gh-pages -d dist -r https://github.com/valeskacampos/monedero-virtual.git"
   },
-  "homepage": "https://valeskacampos.github.io/monedero-virtual",
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
     "@react-navigation/bottom-tabs": "^7.3.10",
